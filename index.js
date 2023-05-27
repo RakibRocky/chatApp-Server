@@ -10,9 +10,9 @@ app.use(cors());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    // origin: "http://localhost:3000",
+    origin: "http://localhost:3000",
     // origin: "https://splendid-entremet-e9f74d.netlify.app/",
-    origin: "https://chatclient-7nyg.onrender.com/",
+    // origin: "https://chatclient-7nyg.onrender.com/",
     methods: ["GET", "POST"],
   },
 });
